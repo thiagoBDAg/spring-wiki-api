@@ -53,7 +53,7 @@ public class CategoriaController {
             );
         }
         
-
+        result.get().setCategoria(categoria.getCategoria());
         return categoriaRepo.save(result.get());
 
     }
