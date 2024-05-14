@@ -1,0 +1,14 @@
+@baseurl = https://8080-thiagobdag-springwikiap-y1m7vzychax.ws-us110.gitpod.io
+
+###
+GET {{baseurl}}/obras
+
+###
+POST {{baseurl}}/obras
+Content-Type: application/json
+{
+    "titulo":"Breaking Bad",
+    "autor":"Vince Gilligan",
+    "genero":"Ação/Suspense/Crime",
+    "duracao":"5 Temporadas"
+}

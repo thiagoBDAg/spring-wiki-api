@@ -10,5 +10,5 @@ vscode:
       - vscjava.vscode-gradle
 
 ports:
-  - port: 8080
+  - port: 3306
     visibility: public

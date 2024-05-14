@@ -1,0 +1,14 @@
+@baseurl = https://8080-thiagobdag-springwikiap-y1m7vzychax.ws-us110.gitpod.io
+
+###
+GET {{baseurl}}/personagens
+
+###
+POST {{baseurl}}/personagens
+Content-Type: application/json
+{
+    "imagem": "https://i.imgur.com/TKStDdc.png",
+    "nome":"Heisenberg",
+    "idade": 52,
+    "sexo": "Homem"
+}

@@ -1,4 +1,29 @@
 @baseurl = https://8080-thiagobdag-springwikiap-y1m7vzychax.ws-us110.gitpod.io
 
 ###
-GET {{baseurl}}
+GET {{baseurl}}/categorias
+
+###
+POST {{baseurl}}/categorias
+Content-Type: application/json
+{
+    "categoria": "Série"
+}
+
+###
+
+POST {{baseurl}}/categorias
+Content-Type: application/json
+{
+    "categoria": "Amime"
+}
+
+###
+
+PUT {{baseurl}}/categorias/2
+Content-Type: application/json
+{
+    "categoria": "Anime"
+}
+
+###
