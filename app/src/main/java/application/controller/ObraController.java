@@ -44,7 +44,7 @@ public class ObraController {
     }
 
     @PutMapping("/{id}")
-    private Obra put(@RequestBody Obra obra, @PathVariable long id){
+    public Obra put(@RequestBody Obra obra, @PathVariable long id){
         Optional<Obra> result = obraRepo.findById(id);
         
         if (result.isEmpty()){
@@ -61,7 +61,7 @@ public class ObraController {
 
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     private void delete(@PathVariable long id){
         if(obraRepo.existsById(id)){
             obraRepo.deleteById(id);

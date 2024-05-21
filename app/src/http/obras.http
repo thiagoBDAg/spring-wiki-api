@@ -1,4 +1,4 @@
-@baseurl = https://8080-thiagobdag-springwikiap-y1m7vzychax.ws-us110.gitpod.io
+@baseurl = https://8080-thiagobdag-springwikiap-d7karjvwtxc.ws-us114.gitpod.io
 
 ###
 GET {{baseurl}}/obras
@@ -6,9 +6,27 @@ GET {{baseurl}}/obras
 ###
 POST {{baseurl}}/obras
 Content-Type: application/json
+
 {
-    "titulo":"Breaking Bad",
+    "titulo":"Better Call Saul",
     "autor":"Vince Gilligan",
-    "genero":"Ação/Suspense/Crime",
-    "duracao":"5 Temporadas"
+    "genero":"Ação/Terror",
+    "duracao":"6 Temporadas",
+    "categoria": {"id": 1}
 }
+###
+PUT {{baseurl}}/obras/4
+Content-Type: application/json
+
+{
+    "titulo":"Better Call Saul",
+    "autor":"Vince Gilligan",
+    "genero":"Crime/Drama/Humor Ácido",
+    "duracao":"6 Temporadas",
+    "categoria": {"id": 1}
+}
+###
+
+DELETE https://8080-thiagobdag-springwikiap-d7karjvwtxc.ws-us114.gitpod.io/obras/3
+
+###

@@ -1,4 +1,4 @@
-@baseurl = https://8080-thiagobdag-springwikiap-y1m7vzychax.ws-us110.gitpod.io
+@baseurl = https://8080-thiagobdag-springwikiap-d7karjvwtxc.ws-us114.gitpod.io
 
 ###
 GET {{baseurl}}/personagens
@@ -6,9 +6,24 @@ GET {{baseurl}}/personagens
 ###
 POST {{baseurl}}/personagens
 Content-Type: application/json
+
+{
+    "imagem": "https://i.imgur.com/TKStDdc.png",
+    "nome":"Hetttsss",
+    "idade": 52,
+    "sexo": "Homem Velho"
+}
+
+###
+PUT {{baseurl}}/personagens/1
+Content-Type: application/json
+
 {
     "imagem": "https://i.imgur.com/TKStDdc.png",
     "nome":"Heisenberg",
     "idade": 52,
     "sexo": "Homem"
 }
+
+###
+DELETE {{baseurl}}/personagens/2

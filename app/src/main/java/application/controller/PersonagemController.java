@@ -17,7 +17,7 @@ import application.model.Personagem;
 import application.repository.PersonagemRepository;
 
 @RestController
-@RequestMapping("/personagems")
+@RequestMapping("/personagens")
 public class PersonagemController {
     @Autowired
     private PersonagemRepository personagemRepo;
@@ -62,7 +62,7 @@ public class PersonagemController {
 
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     private void delete(@PathVariable long id){
         if(personagemRepo.existsById(id)){
             personagemRepo.deleteById(id);

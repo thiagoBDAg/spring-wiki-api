@@ -58,7 +58,7 @@ public class CategoriaController {
 
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     private void delete(@PathVariable long id){
         if(categoriaRepo.existsById(id)){
             categoriaRepo.deleteById(id);
