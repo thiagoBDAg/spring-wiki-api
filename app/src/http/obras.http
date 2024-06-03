@@ -1,4 +1,4 @@
-@baseurl = https://8080-thiagobdag-springwikiap-d7karjvwtxc.ws-us114.gitpod.io
+@baseurl = https://8080-thiagobdag-springwikiap-ow4vpwmje0q.ws-us114.gitpod.io
 
 ###
 GET {{baseurl}}/obras
